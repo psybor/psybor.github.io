@@ -1,0 +1,778 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>需求分析和架构设计 · 学习分享</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zy">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-extra-html/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../zy/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Pages</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Baran
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="01-需求分析和架构设计.html">
+            
+                <a href="01-需求分析和架构设计.html">
+            
+                    
+                    需求分析和架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../zy/">
+            
+                <a href="../zy/">
+            
+                    
+                    Zy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../zy/01-需求分析和架构设计.html">
+            
+                <a href="../zy/01-需求分析和架构设计.html">
+            
+                    
+                    需求分析和架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../zy/02-脚手架分析.html">
+            
+                <a href="../zy/02-脚手架分析.html">
+            
+                    
+                    脚手架分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Images
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../郭二蛋/">
+            
+                <a href="../郭二蛋/">
+            
+                    
+                    郭二蛋
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../郭二蛋/01-第一周笔记和作业.html">
+            
+                <a href="../郭二蛋/01-第一周笔记和作业.html">
+            
+                    
+                    第一周笔记和作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../郭二蛋/02-第二周笔记和作业.html">
+            
+                <a href="../郭二蛋/02-第二周笔记和作业.html">
+            
+                    
+                    第二周笔记和作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../郭二蛋/03-第三周笔记和作业.html">
+            
+                <a href="../郭二蛋/03-第三周笔记和作业.html">
+            
+                    
+                    第三周笔记和作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../郭二蛋/04-第四周笔记和作业.html">
+            
+                <a href="../郭二蛋/04-第四周笔记和作业.html">
+            
+                    
+                    第四周笔记和作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../郭二蛋/05-第五周笔记和作业.html">
+            
+                <a href="../郭二蛋/05-第五周笔记和作业.html">
+            
+                    
+                    第五周笔记和作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../🎮滔/">
+            
+                <a href="../🎮滔/">
+            
+                    
+                    🎮滔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../🎮滔/01-需求分析及架构设计.html">
+            
+                <a href="../🎮滔/01-需求分析及架构设计.html">
+            
+                    
+                    需求分析及架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Images
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../🐏羊羽/">
+            
+                <a href="../🐏羊羽/">
+            
+                    
+                    🐏羊羽
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../🐏羊羽/01-技术方案设计文档.html">
+            
+                <a href="../🐏羊羽/01-技术方案设计文档.html">
+            
+                    
+                    技术方案设计文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    Images
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../🐟红鲤驴与绿驴鱼/">
+            
+                <a href="../🐟红鲤驴与绿驴鱼/">
+            
+                    
+                    🐟红鲤驴与绿驴鱼
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../🐟红鲤驴与绿驴鱼/01-作业-架构方案设计.html">
+            
+                <a href="../🐟红鲤驴与绿驴鱼/01-作业-架构方案设计.html">
+            
+                    
+                    作业 架构方案设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../👨‍🎓风情炀/">
+            
+                <a href="../👨‍🎓风情炀/">
+            
+                    
+                    👨‍🎓风情炀
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../👨‍🎓风情炀/01-weak01学习笔记.html">
+            
+                <a href="../👨‍🎓风情炀/01-weak01学习笔记.html">
+            
+                    
+                    Weak01学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    Images
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    👨‍🏫Sam老师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../👨‍🏫Sam老师/01-前端未来趋势分析.html">
+            
+                <a href="../👨‍🏫Sam老师/01-前端未来趋势分析.html">
+            
+                    
+                    前端未来趋势分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../👨‍🏫Sam老师/02-为什么要学习前端架构.html">
+            
+                <a href="../👨‍🏫Sam老师/02-为什么要学习前端架构.html">
+            
+                    
+                    为什么要学习前端架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../👨‍🏫Sam老师/03-脚手架入门.html">
+            
+                <a href="../👨‍🏫Sam老师/03-脚手架入门.html">
+            
+                    
+                    脚手架入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../👨‍🏫双越老师/">
+            
+                <a href="../👨‍🏫双越老师/">
+            
+                    
+                    👨‍🏫双越老师
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../👨‍🏫双越老师/01-我如何理解Web前端架构师的角色和职责.html">
+            
+                <a href="../👨‍🏫双越老师/01-我如何理解Web前端架构师的角色和职责.html">
+            
+                    
+                    我如何理解Web前端架构师的角色和职责
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../👨‍🏫双越老师/02-Web 前端架构师课 vs 普通实战课.html">
+            
+                <a href="../👨‍🏫双越老师/02-Web 前端架构师课 vs 普通实战课.html">
+            
+                    
+                    Web 前端架构师课 Vs 普通实战课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../👨‍🏫双越老师/03-动真格的了！为做一门课程花费 1.5万 购买云服务.html">
+            
+                <a href="../👨‍🏫双越老师/03-动真格的了！为做一门课程花费 1.5万 购买云服务.html">
+            
+                    
+                    动真格的了！为做一门课程花费 1.5万 购买云服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../👨‍🏫张轩老师/">
+            
+                <a href="../👨‍🏫张轩老师/">
+            
+                    
+                    👨‍🏫张轩老师
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../👨‍🏫张轩老师/01-在学习了一门技术的基础知识后，怎样持续提升这门技术达到更高水平？.html">
+            
+                <a href="../👨‍🏫张轩老师/01-在学习了一门技术的基础知识后，怎样持续提升这门技术达到更高水平？.html">
+            
+                    
+                    在学习了一门技术的基础知识后，怎样持续提升这门技术达到更高水平？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../👨‍🏫张轩老师/02-Typescript 是不是前端开发必备的技能？一个 ts 黑到 ts 粉的心路历程.html">
+            
+                <a href="../👨‍🏫张轩老师/02-Typescript 是不是前端开发必备的技能？一个 ts 黑到 ts 粉的心路历程.html">
+            
+                    
+                    Typescript 是不是前端开发必备的技能？一个 Ts 黑到 Ts 粉的心路历程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >需求分析和架构设计</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <header><!-- 百度统计的代码 -->
+<script>
+</script>
+</header><h1 id="&#x9700;&#x6C42;&#x5206;&#x6790;&#x548C;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;">&#x9700;&#x6C42;&#x5206;&#x6790;&#x548C;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;</h1>
+<h3 id="&#x7B2C;3&#x7AE0;-&#x9700;&#x6C42;&#x5206;&#x6790;">&#x7B2C;3&#x7AE0; &#x9700;&#x6C42;&#x5206;&#x6790;</h3>
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:100%; height:500px;" src="https://www.processon.com/embed/5fe881d007912910e483cf54"></iframe>
+
+
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zy (2020 - present) all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
+2023-06-16 05:10:58
+</span></footer><footer><div>
+  <a href="https://beian.miit.gov.cn" target="_blank" rel="noreferrer">&#x5907;&#x6848;&#x53F7;&#xFF1A;&#x8700;ICP&#x5907;2022029655&#x53F7;-1</a>
+</div>
+</footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Baran">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../zy/" class="navigation navigation-next " aria-label="Next page: Zy">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"需求分析和架构设计","level":"1.2.1","depth":2,"next":{"title":"Zy","level":"1.3","depth":1,"path":"pages/zy/README.md","ref":"pages/zy/README.md","articles":[{"title":"需求分析和架构设计","level":"1.3.1","depth":2,"path":"pages/zy/01-需求分析和架构设计.md","ref":"pages/zy/01-需求分析和架构设计.md","articles":[]},{"title":"脚手架分析","level":"1.3.2","depth":2,"path":"pages/zy/02-脚手架分析.md","ref":"pages/zy/02-脚手架分析.md","articles":[]},{"title":"Images","level":"1.3.3","depth":2,"ref":"","articles":[]}]},"previous":{"title":"Baran","level":"1.2","depth":1,"path":"pages/Baran/README.md","ref":"pages/Baran/README.md","articles":[{"title":"需求分析和架构设计","level":"1.2.1","depth":2,"path":"pages/Baran/01-需求分析和架构设计.md","ref":"pages/Baran/01-需求分析和架构设计.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","todo","chapter-fold","-lunr","-search","search-pro","github","splitter","tbfed-pagefooter","hide-element","summary","extra-html"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zy (2020 - present)"},"chapter-fold":{},"github":{"url":"https://github.com/psybor/students-learn-task"},"todo":{},"summary":{},"splitter":{},"search-pro":{},"extra-html":{"footer":{"files":["extra-html-files/beian.html"]},"header":{"files":["extra-html-files/baidu-tongji.html"]}},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习分享","language":"zh-hans","gitbook":"*","description":"学习分享"},"file":{"path":"pages/Baran/01-需求分析和架构设计.md","mtime":"2023-06-16T05:10:58.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-16T05:11:49.542Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-extra-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
